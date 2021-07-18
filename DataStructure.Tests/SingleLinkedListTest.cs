@@ -1,15 +1,15 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DataStructure.Core.LinearList;
+using DataStructure.Core.LinkedList;
 namespace DataStructure.Tests
 {
     [TestClass]
-    public class LinearListTest
+    public class SingleLinkedListTest
     {
         [TestMethod]
         public void Test()
         {
-            var intList = new LinearList<int>(10);
+            var intList = new SingleLinkedList<int>();
             Console.WriteLine(intList);
             intList.Append(2);
             Console.WriteLine(intList);
@@ -36,6 +36,7 @@ namespace DataStructure.Tests
             intList.Append(2);
             intList.Append(3);
             Console.WriteLine(intList);
+
         }
     }
 }

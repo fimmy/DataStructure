@@ -17,12 +17,13 @@ namespace DataStructure.Tests
             Console.WriteLine(intList);
             intList.Append(3);
             Console.WriteLine(intList);
-            intList.Delete(1);
+            intList.Delete(0);
             Console.WriteLine(intList);
             intList.Insert(1, 8);
             Console.WriteLine(intList);
             intList.Insert(0, 7);
             Console.WriteLine(intList);
+            Console.WriteLine(intList.GetItem(0));
             intList.Delete(1);
             Console.WriteLine(intList);
             intList.Insert(3, 9);

@@ -84,10 +84,20 @@ namespace DataStructure.Core.LinkedList
         /// <returns></returns>
         public T Delete(int index)
         {
-            var parentNode = GetNode(index - 1);
-            var currentNode = parentNode.next;
-            var nextNode = currentNode.next;
-            parentNode.next = nextNode;
+            LinkedNode<T> currentNode;
+
+            if (index == 0)
+            {
+                currentNode = head;
+                head = head.next;
+            }
+            else
+            {
+                var parentNode = GetNode(index - 1);
+                currentNode = parentNode.next;
+                var nextNode = currentNode.next;
+                parentNode.next = nextNode;
+            }
             length--;
             return currentNode.data;
         }

@@ -10,6 +10,7 @@ namespace DataStructure.Tests
         public void Test()
         {
             var intList = new SingleLinkedList<int>();
+
             Console.WriteLine(intList);
             intList.Append(2);
             Console.WriteLine(intList);
@@ -17,7 +18,7 @@ namespace DataStructure.Tests
             Console.WriteLine(intList);
             intList.Append(3);
             Console.WriteLine(intList);
-            intList.Delete(1);
+            intList.Delete(0);
             Console.WriteLine(intList);
             intList.Insert(1, 8);
             Console.WriteLine(intList);
